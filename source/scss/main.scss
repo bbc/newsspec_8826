@@ -1,0 +1,127 @@
+@import "news_special/media_query";
+
+.newsspec_7553 {
+
+    margin-bottom: 12px;
+
+    .newsspec_cta {
+        display: none;
+    }
+
+
+    @include respondMinMax(316px, false) {
+        .newsspec_cta {
+            display: block;
+            font-size: 1.2em;
+            margin: 0 0 0 16px;
+            padding: 16px 0 16px 58px;
+            background: url(../img/nav_sprite.png) no-repeat -104px 0 transparent;
+            line-height: 1em;
+
+            strong {
+                color: #007E7E;
+            }
+        }
+    }
+
+    .statistics {
+        list-style-type: none;
+        background-color: white;
+        padding: 1px 4px;
+    }
+
+    .statistics__item-figure {
+        color: #007E7E;
+        font-size: 24px;
+        line-height: 30px;
+        display: block;
+        font-weight: bold;
+    }
+
+    .statistics__item {
+        background-image: none;
+        padding: 0 0 0 50px;
+        background-repeat: no-repeat;
+        list-style-type: none;
+    }
+
+    .statistics__item--1, .statistics__item--2 {
+        background-image: url('../img/man_icon.gif');
+        background-position: 7px 0;
+    }
+
+    .statistics__item--3 {
+        background-image: url('../img/money_icon.gif');
+        background-position: 0 0;
+    }
+
+    @include respondMinMax(768px, false) {
+        .statistics__item {
+            display: inline-block;
+            background-position-y: 50%;
+            width: 26.3%;
+        }
+    }
+
+    .navigation__item {
+        display: none;
+    }
+
+    @include respondMinMax(316px, false) {
+        .navigation {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .navigation__item{
+            display: block;
+            float: left;
+            list-style: none;
+            width: 16%;
+            margin: 0 4px 4px 0;
+            background-image: none;
+            padding: 0;
+
+            a {
+                position: relative;
+                display: block;
+                height: 100%;
+                text-decoration: none;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        
+            &:hover {
+                a span {
+                    background: #007E7E;
+                }
+            }
+        }
+
+        .navigation__item-caption {
+            width: 100%;
+            padding: 2px 0;
+            text-align: center;
+            color: white;
+            font: 16px Arial, sans-serif;
+            background: black;
+            display: block;
+        }
+    }
+
+    @include respondMinMax(976px, false) {
+        .navigation__item {
+            width: 16.25%;
+        }
+    }
+
+    @include respondMinMax(false, 700px) {
+        .navigation__item {
+            width: 32%;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<div class="newsspec_7553">
+
+    <ul class="navigation" id="favela_nav">
+
+        <% 
+        var number = 0;
+        while (true) {
+            number++;
+            if (obj['nav_' + number + '_title'] === undefined) {
+                break;
+            }
+        %>
+            <li class="navigation__item">
+                <a href="<%= obj['nav_' + number + '_link'] %>">
+                    <img src="<%= obj['pathStatic'] %>/<%= obj['vocab_dir'] %>/img/<%= obj['nav_' + number + '_image'] %>?v=<%= obj['version'] %>"  class="no-replace" />
+                    <span class="navigation__item-caption"><%= obj['nav_' + number + '_title'] %></span>
+                </a>
+            </li>
+        <%
+        };
+        %>
+
+    </ul>
+
+</div>

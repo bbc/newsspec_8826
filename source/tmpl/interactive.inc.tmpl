@@ -1,0 +1,39 @@
+<!--[if lt IE 9]>
+    <link type="text/css" rel="stylesheet" href="<%= pathStatic %>/<%= vocab_dir %>/css/legacy-ie.css?v=<%= version %>" />
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<script>
+(function () {
+    function oldIE() {
+        return !!(document.documentMode && (document.documentMode < 9));
+    };
+    var styleSheet = oldIE() ? 'legacy-ie':'main';
+    document.write('<link href="<%= pathStatic %>/<%= vocab_dir %>/css/' + styleSheet + '.css?v=<%= version %>" rel="stylesheet" type="text/css" media="all" />');
+})();
+</script>
+<noscript>
+    <link href="<%= pathStatic %>/<%= vocab_dir %>/css/main.css?v=<%= version %>" rel="stylesheet" type="text/css" media="all" />
+</noscript>
+<!--<![endif]-->
+
+<!-- begin suppress rhs on responsive -->
+<style>
+.ns-responsive__supress-rh-side .column--primary{
+    width:100%;
+}
+.ns-responsive__supress-rh-side .column--secondary{
+    width:100%;
+}
+.ns-responsive__supress-rh-side .column--secondary .features-and-analysis__stories .cell{
+    width: 50%;
+}
+</style>
+<script>
+document.body.className += ' ns-responsive__supress-rh-side';
+</script>
+<!-- /end suppress rhs on responsive -->
+
+
+<div>
+    <%= include('interactive.html.tmpl') %>
+</div>

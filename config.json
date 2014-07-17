@@ -1,0 +1,16 @@
+{
+  "debug":          "false",
+  "whichEnv":       "local",
+  "project_number": "7553",
+  "cpsId":          "--REPLACEME--",
+  "year":           "2014",
+  "imageWidths":    ["320", "640", "1024"],
+  "vocabs": {
+    "googleSpreadsheetId": "",
+    "worksheet":           ""
+  },
+  "services": {
+    "default": "english",
+    "others": []
+  }
+}
