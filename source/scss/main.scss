@@ -1,6 +1,6 @@
 @import "news_special/media_query";
 
-.newsspec_7553 {
+.newsspec_8757 {
 
     margin-bottom: 12px;
 
@@ -94,7 +94,7 @@
                     height: auto;
                 }
             }
-        
+
             &:hover {
                 a span {
                     background: #007E7E;
@@ -115,7 +115,7 @@
 
     @include respondMinMax(976px, false) {
         .navigation__item {
-            width: 16.25%;
+            width: 24.72%;
         }
     }
 
