@@ -10,7 +10,7 @@
                 break;
             }
         %>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--<%= number %>">
                 <a href="<%= obj['nav_' + number + '_link'] %>">
                     <img src="<%= obj['pathStatic'] %>/<%= obj['vocab_dir'] %>/img/<%= obj['nav_' + number + '_image'] %>?v=<%= obj['version'] %>"  class="no-replace" />
                     <span class="navigation__item-caption"><%= obj['nav_' + number + '_title'] %></span>

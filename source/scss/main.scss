@@ -61,10 +61,9 @@
             background-position-y: 50%;
             width: 26.3%;
         }
-    }
-
-    .navigation__item {
-        display: none;
+        .newsspec_8757 {
+            white-space: normal;
+        }
     }
 
     @include respondMinMax(316px, false) {
@@ -75,13 +74,18 @@
         }
 
         .navigation__item{
-            display: block;
+            display: inline-block;
             float: left;
             list-style: none;
             width: 16%;
             margin: 0 4px 4px 0;
             background-image: none;
             padding: 0;
+
+            .navigation__item--4 {
+            display: block !important;
+            float:inherit !important;
+        }
 
             a {
                 position: relative;
@@ -122,6 +126,10 @@
     @include respondMinMax(false, 700px) {
         .navigation__item {
             width: 32%;
+        }
+        .navigation__item--4 {
+            display: block !important;
+            float:inherit !important;
         }
     }
 }
